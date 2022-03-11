@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ea8c8c1d6fc77444080a398363859cf2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameOverCanvas: {fileID: 9183143913106254668, guid: e62cc4bfe2ffdb5469f06021fb907659, type: 3}
+  - gameMenu: {fileID: 3171633934044831126, guid: 1aba1f45a17fe9d4daa7432dc9490ebf, type: 3}
+  - score: {fileID: 5273490980178756611, guid: 647acfc1041a9144a82ea3d24fac7743, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
