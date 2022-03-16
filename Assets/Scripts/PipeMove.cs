@@ -4,7 +4,7 @@ namespace DefaultNamespace
 {
     public class PipeMove: MonoBehaviour
     {
-        public float speed;
+        [SerializeField]protected float speed;
 
         void Start()
         {
