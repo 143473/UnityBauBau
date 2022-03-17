@@ -17,6 +17,6 @@ public class ShapeOption : MonoBehaviour
 
     public void ChangeShape(String shape)
     {
-        mesh.sharedMesh = Resources.Load<Mesh>(shape);
+        mesh.sharedMesh = Instantiate( Resources.Load<Mesh>(shape));
     }*/
 }

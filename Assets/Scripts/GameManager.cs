@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //[CreateAssetMenu(menuName = "Game Manager")]
 
@@ -43,11 +45,14 @@ public class GameManager:MonoBehaviour
         }
         yield return new WaitForSecondsRealtime(1f);
     }*/
-    
+
+    private void Update()
+    {
+        if (gameOverCanvas.GetComponent<Canvas>().enabled != true && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+        }
+
+    }
     
 }
-    public enum Listss
-    {
-        FIRST = 0,
-        SECOND = 7,
-    }
