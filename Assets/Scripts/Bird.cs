@@ -5,19 +5,19 @@ namespace DefaultNamespace
     public class Bird: MonoBehaviour
     {
         [Range(0, 20)]
-        [SerializeField] protected float speed;
+        [SerializeField] protected float speed = 1;
         [Range(0, 5)]
-        [SerializeField] protected float gravity;
+        [SerializeField] protected float gravity = 1;
         [SerializeField]protected GameManager gameManager;
-        
-        protected Rigidbody rb;
+
+        private Rigidbody rb;
         
         
         private void Start()
         {
-            Physics.gravity = new Vector3(0, -9.81f, 0);
+            Physics.gravity = new Vector3(0, -9.81f * gravity, 0);
             rb = GetComponent<Rigidbody>();
-            Physics.gravity *= gravity;
+            //Physics.gravity *= gravity;
             rb.useGravity = true;
         }
 
